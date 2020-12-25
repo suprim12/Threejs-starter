@@ -70,9 +70,10 @@ export default class Sketch {
         uvRate1: {
           value: new THREE.Vector2(1, 1),
         },
+
+      },
         vertexShader: vertex,
         fragmentShader: fragment,
-      },
     });
 
     this.geometry = new THREE.PlaneBufferGeometry(1, 1, 1, 1);
