@@ -3,11 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WH1</title>
+    <title>PortFolio Slider -- Vanilla | Draggable Slider | Controlled</title>
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
-    <div id="container"></div>
-    <script src="./js/app.js"></script>
+    <section class="portfolio-slider">
+      <div class="center-red"></div>
+      <div class="portfolio-slider--content">
+        <div class="su-slider">
+          <div class="su-slider--wrapper">
+            <div class="su-slider--slide">
+              <div class="portfolio-slider--item">
+                <img src="./img/slide/1.jpg" class="slider-img" />
+              </div>
+            </div>
+            <div class="su-slider--slide">
+              <div class="portfolio-slider--item">
+                <img src="./img/slide/3.jpg" class="slider-img" />
+              </div>
+            </div>
+            <div class="su-slider--slide">
+              <div class="portfolio-slider--item">
+                <img src="./img/slide/4.jpg" class="slider-img" />
+              </div>
+            </div>
+            <div class="su-slider--slide">
+              <div class="portfolio-slider--item">
+                <img src="./img/slide/5.jpg" class="slider-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="su-slider--dots">
+        <ul>
+          <li>
+            <span class="su-slider--dot" data-target="0">1</span>
+          </li>
+          <li>
+            <span class="su-slider--dot" data-target="1">2</span>
+          </li>
+          <li>
+            <span class="su-slider--dot" data-target="2">3</span>
+          </li>
+          <li>
+            <span class="su-slider--dot" data-target="3">4</span>
+          </li>
+        </ul>
+      </div>
+      <div class="su-slider--nav">
+        <button type="button" class="su-slider--nav-prev">Prev</button>
+        <button type="button" class="su-slider--nav-next">Next</button>
+      </div>
+    </section>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
